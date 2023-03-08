@@ -84,4 +84,23 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+body {
+  font-family: "montserrat", sans-serif;
+}
+
+.container {
+  width: 95%;
+  max-width: 1920px;
+  margin-inline: auto;
+}
+
+@media (min-width: 50em) {
+  .even-columns {
+    display: flex;
+    gap: 2rem;
+  }
+  .even-columns * {
+    flex-basis: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */

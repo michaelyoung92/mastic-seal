@@ -84,3 +84,26 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+//General Styling
+
+body {
+  font-family: "montserrat", sans-serif;
+}
+
+.container {
+  width: 95%;
+  max-width: 1920px;
+  margin-inline: auto;
+}
+
+@media (min-width: 50em) {
+  .even-columns {
+    display: flex;
+    gap: 2rem;
+
+    * {
+      flex-basis: 100%;
+    }
+  }
+}
