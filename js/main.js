@@ -8,7 +8,9 @@ hamburger.addEventListener("click", () => {
 
   if (visibility === "false") {
     navList.setAttribute("data-visible", true);
+    hamburger.setAttribute("aria-expanded", true);
   } else {
     navList.setAttribute("data-visible", false);
+    hamburger.setAttribute("aria-expanded", false);
   }
 });
