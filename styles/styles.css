@@ -89,6 +89,7 @@ select {
 }
 body {
   font-family: "montserrat", sans-serif;
+  height: auto;
 }
 
 .container {
@@ -128,6 +129,11 @@ body {
     background-color: #fff;
     border-color: rgba(45, 155, 219, 0.8509803922);
   }
+}
+header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
 }
 header .container {
   display: flex;
