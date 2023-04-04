@@ -95,8 +95,8 @@ body {
 }
 
 .container {
-  width: 95%;
-  max-width: 1364px;
+  width: 90%;
+  max-width: 1900px;
   margin-inline: auto;
 }
 
@@ -140,19 +140,23 @@ body {
 // Header
 
 header {
-  position: sticky;
-  top: 0;
-  background-color: #fff;
+  // position: sticky;
+  // top: 0;
+  // background-color: #fff;
 
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: 1.4rem 0;
   }
 
   .title-logo {
     max-width: 70px;
+
+    @media (min-width: 50em) {
+      max-width: 90px;
+    }
   }
 
   .button {
@@ -182,18 +186,18 @@ header {
     }
 
     &.active .bar:nth-child(1) {
-      transform: translateY(13px) rotate(45deg);
+      transform: translateY(11px) rotate(45deg);
     }
 
     &.active .bar:nth-child(3) {
-      transform: translateY(-13px) rotate(-45deg);
+      transform: translateY(-11px) rotate(-45deg);
     }
   }
 
   .bar {
     display: block;
     width: 35px;
-    height: 3px;
+    height: 1px;
     margin: 10px auto;
     background-color: #2d9cdb;
     border-radius: 5px;
@@ -236,4 +240,34 @@ header {
       font-weight: bold;
     }
   }
+}
+
+// Hero section
+
+.hero-section {
+  background-image: url(../images/hero.jpg);
+  min-height: 60vh;
+
+  .container {
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.hero-content {
+  color: #fff;
+  padding: 2rem 0;
+
+  p {
+    margin-bottom: 2rem;
+  }
+}
+
+.primary-heading {
+  font-size: 4.5rem;
+  font-weight: bold;
+  line-height: 6rem;
+  margin-bottom: 1rem;
 }
