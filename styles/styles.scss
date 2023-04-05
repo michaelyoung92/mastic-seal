@@ -96,7 +96,7 @@ body {
 
 .container {
   width: 90%;
-  max-width: 1900px;
+  max-width: 1500px;
   margin-inline: auto;
 }
 
@@ -149,6 +149,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1.4rem 0;
+    max-width: 1900px;
   }
 
   .title-logo {
@@ -245,7 +246,7 @@ header {
 // Hero section
 
 .hero-section {
-  background-image: url(../images/hero.jpg);
+  background-image: url(../images/about.jpg);
   min-height: 60vh;
 
   .container {
@@ -270,4 +271,42 @@ header {
   font-weight: bold;
   line-height: 6rem;
   margin-bottom: 1rem;
+}
+
+// About section
+.about-section {
+  .container {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    @media (min-width: 50em) {
+      flex-direction: row;
+      justify-content: space-between;
+
+      div {
+        flex: 1 1 0px;
+        max-width: 500px;
+      }
+    }
+  }
+
+  .button {
+    width: 60%;
+    align-self: center;
+    font-size: 2rem;
+  }
+}
+
+.main-block-text {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 3.3rem;
+}
+
+.secondary-block-text {
+  font-size: 1.75rem;
+  font-weight: lighter;
+  line-height: 3rem;
 }

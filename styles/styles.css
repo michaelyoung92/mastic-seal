@@ -94,7 +94,7 @@ body {
 
 .container {
   width: 90%;
-  max-width: 1900px;
+  max-width: 1500px;
   margin-inline: auto;
 }
 
@@ -135,6 +135,7 @@ header .container {
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 0;
+  max-width: 1900px;
 }
 header .title-logo {
   max-width: 70px;
@@ -221,7 +222,7 @@ header .bar {
   }
 }
 .hero-section {
-  background-image: url(../images/hero.jpg);
+  background-image: url(../images/about.jpg);
   min-height: 60vh;
 }
 .hero-section .container {
@@ -244,4 +245,38 @@ header .bar {
   font-weight: bold;
   line-height: 6rem;
   margin-bottom: 1rem;
+}
+
+.about-section .container {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+@media (min-width: 50em) {
+  .about-section .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .about-section .container div {
+    flex: 1 1 0px;
+    max-width: 500px;
+  }
+}
+.about-section .button {
+  width: 60%;
+  align-self: center;
+  font-size: 2rem;
+}
+
+.main-block-text {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 3.3rem;
+}
+
+.secondary-block-text {
+  font-size: 1.75rem;
+  font-weight: lighter;
+  line-height: 3rem;
 }/*# sourceMappingURL=styles.css.map */
