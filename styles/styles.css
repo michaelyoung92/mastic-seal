@@ -104,10 +104,41 @@ body {
   border: 1px solid transparent;
   color: #fff;
   padding: 0.6em;
-  border-radius: 10px;
-  font-weight: bold;
+  border-radius: 50px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
+}
+
+.secondary-button {
+  border: none;
+  background-color: transparent;
+  color: #2d9cdb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+@media (min-width: 50em) {
+  .secondary-button {
+    font-size: 1.9rem;
+  }
+}
+
+.border-animation {
+  border-bottom: 1px solid transparent;
+  position: relative;
+}
+.border-animation:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  display: block;
+  margin-top: 2px;
+  right: 0;
+  background: #2d9cdb;
+  transition: width 0.2s ease;
 }
 
 @media (min-width: 50em) {
@@ -128,6 +159,11 @@ body {
     color: #2d9cdb;
     background-color: #fff;
     border-color: rgba(45, 155, 219, 0.8509803922);
+  }
+  .border-animation:hover:after {
+    width: 100%;
+    left: 0;
+    background: #2d9cdb;
   }
 }
 header .container {
@@ -222,29 +258,72 @@ header .bar {
   }
 }
 .hero-section {
-  background-image: url(../images/about.jpg);
-  min-height: 60vh;
+  margin: 2rem 0;
 }
 .hero-section .container {
   min-height: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+@media (min-width: 50em) {
+  .hero-section .container {
+    justify-content: center;
+    padding: 5rem 0;
+  }
+}
+.hero-section .button {
+  padding: 0.8em 3em;
+  box-shadow: 0px 2px 15px rgba(45, 155, 219, 0.6156862745);
+  font-size: 1.6rem;
+}
+@media (min-width: 50em) {
+  .hero-section .button {
+    font-size: 1.9rem;
+  }
+}
+
+.cta-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+@media (min-width: 50em) {
+  .cta-links {
+    flex-direction: row;
+  }
 }
 
 .hero-content {
-  color: #fff;
   padding: 2rem 0;
+  max-width: 1000px;
 }
 .hero-content p {
   margin-bottom: 2rem;
+  font-weight: lighter;
+}
+@media (min-width: 50em) {
+  .hero-content p {
+    font-size: 2.3rem;
+    line-height: 4rem;
+  }
 }
 
 .primary-heading {
-  font-size: 4.5rem;
+  font-size: 6.5rem;
   font-weight: bold;
-  line-height: 6rem;
-  margin-bottom: 1rem;
+  line-height: 6.5rem;
+  margin-bottom: 2rem;
+}
+@media (min-width: 50em) {
+  .primary-heading {
+    font-size: 10rem;
+    line-height: 10rem;
+  }
 }
 
 .about-section .container {
@@ -262,11 +341,6 @@ header .bar {
     flex: 1 1 0px;
     max-width: 500px;
   }
-}
-.about-section .button {
-  width: 60%;
-  align-self: center;
-  font-size: 2rem;
 }
 
 .main-block-text {
