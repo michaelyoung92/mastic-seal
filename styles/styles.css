@@ -353,4 +353,56 @@ header .bar {
   font-size: 1.75rem;
   font-weight: lighter;
   line-height: 3rem;
+}
+
+.gallery-section {
+  margin: 16rem 0;
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.gallery-container img {
+  width: 100%;
+  max-height: 600px;
+}
+.gallery-container img:nth-child(2) {
+  flex: 2;
+}
+.gallery-container img:nth-child(1) {
+  flex: 1;
+}
+.gallery-container img:nth-child(3) {
+  flex: 1;
+}
+
+.services-section {
+  font-size: 1.75rem;
+  margin-bottom: 16rem;
+}
+.services-section .even-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.services-section .even-columns h2 {
+  color: #2d9cdb;
+}
+.services-section .even-columns h3 {
+  opacity: 0.8;
+}
+.services-section .even-columns p {
+  font-weight: lighter;
+  line-height: 3rem;
+}
+.services-section .even-columns ul {
+  margin: 0;
+  padding: 0;
+}
+.services-section .even-columns ul li {
+  margin-bottom: 3rem;
 }/*# sourceMappingURL=styles.css.map */
