@@ -100,6 +100,11 @@ body {
   margin-inline: auto;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .button {
   font-size: 1.4rem;
   background-color: #2d9cdb;
@@ -450,4 +455,38 @@ header {
       }
     }
   }
+}
+
+// Footer
+footer {
+  background-color: #2d9cdb;
+  color: #fff;
+  padding: 4rem 0;
+
+  .even-columns {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    i {
+      font-size: 3rem;
+      margin-right: 0.5rem;
+    }
+  }
+
+  img {
+    max-width: 80px;
+    display: none;
+  }
+}
+
+.branding {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+}
+
+.copyright {
+  font-weight: lighter;
+  font-size: 1.5rem;
+  opacity: 0.8;
 }
