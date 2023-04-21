@@ -389,6 +389,12 @@ header .bar {
   font-size: 1.75rem;
   margin-bottom: 16rem;
 }
+.services-section h2 {
+  margin-bottom: 1rem;
+}
+.services-section h3 {
+  margin-bottom: 0.4rem;
+}
 .services-section .even-columns {
   display: flex;
   flex-direction: column;

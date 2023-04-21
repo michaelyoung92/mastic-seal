@@ -428,6 +428,14 @@ header {
   font-size: 1.75rem;
   margin-bottom: 16rem;
 
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    margin-bottom: 0.4rem;
+  }
+
   .even-columns {
     display: flex;
     flex-direction: column;
