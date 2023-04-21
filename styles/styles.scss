@@ -441,6 +441,11 @@ header {
     flex-direction: column;
     gap: 3rem;
 
+    @media (min-width: 50em) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
     h2 {
       color: #2d9cdb;
     }

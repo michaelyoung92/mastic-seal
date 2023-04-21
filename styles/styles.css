@@ -400,6 +400,12 @@ header .bar {
   flex-direction: column;
   gap: 3rem;
 }
+@media (min-width: 50em) {
+  .services-section .even-columns {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
 .services-section .even-columns h2 {
   color: #2d9cdb;
 }
