@@ -103,6 +103,10 @@ a {
   color: inherit;
 }
 
+.secondary-heading {
+  color: #2d9cdb;
+}
+
 .button {
   font-size: 1.4rem;
   background-color: #2d9cdb;
@@ -406,9 +410,6 @@ header .bar {
     align-items: flex-start;
   }
 }
-.services-section .even-columns h2 {
-  color: #2d9cdb;
-}
 .services-section .even-columns h3 {
   opacity: 0.8;
 }
@@ -424,10 +425,106 @@ header .bar {
   margin-bottom: 3rem;
 }
 
+.contact-section i {
+  font-size: 4rem;
+  color: #2d9cdb;
+  margin-right: 1rem;
+}
+.contact-section h2 {
+  margin-bottom: 4rem;
+}
+.contact-section .contact-link {
+  color: #2d9cdb;
+  font-weight: bold;
+  display: block;
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+}
+.contact-section .contact-details {
+  line-height: 3rem;
+}
+@media (min-width: 50em) {
+  .contact-section .even-columns {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+  .contact-section .even-columns form {
+    margin-top: 0;
+  }
+  .contact-section .even-columns h2 {
+    font-size: 4.8rem;
+    margin-bottom: 3rem;
+  }
+  .contact-section .even-columns p {
+    font-size: 1.9rem;
+  }
+}
+
+.bottom-border {
+  height: 2px;
+  width: 350px;
+  background-color: #2d9cdb;
+  margin: 4rem 0;
+}
+
+form {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}
+form input,
+form textarea {
+  margin-bottom: 2rem;
+  width: 100%;
+  background-color: #f6f6f6;
+  border: none;
+  padding: 0.5em 0;
+}
+form textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.name {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.first-name {
+  flex: 1;
+}
+
+.second-name {
+  flex: 1;
+}
+
+.submit-btn {
+  width: 100px;
+  background-color: #fff;
+  border: 2px solid #2d9cdb;
+  outline: none;
+  color: #2d9cdb;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 0.75em;
+}
+
 footer {
   background-color: #2d9cdb;
   color: #fff;
   padding: 3rem 0;
+}
+footer .contact-link {
+  display: block;
+  margin-bottom: 0.5rem;
 }
 footer .even-columns {
   display: flex;
@@ -466,6 +563,6 @@ footer img {
 }
 
 .email-link {
-  display: block;
-  margin-bottom: 1rem;
+  text-decoration: underline;
+  font-weight: bold;
 }/*# sourceMappingURL=styles.css.map */

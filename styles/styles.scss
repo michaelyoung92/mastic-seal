@@ -92,6 +92,7 @@ select {
 body {
   font-family: "montserrat", sans-serif;
   height: auto;
+  // background-color: #ededed;
 }
 
 .container {
@@ -103,6 +104,10 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.secondary-heading {
+  color: #2d9cdb;
 }
 
 .button {
@@ -446,10 +451,6 @@ header {
       align-items: flex-start;
     }
 
-    h2 {
-      color: #2d9cdb;
-    }
-
     h3 {
       opacity: 0.8;
     }
@@ -470,11 +471,120 @@ header {
   }
 }
 
+// Contact section
+.contact-section {
+  i {
+    font-size: 4rem;
+    color: #2d9cdb;
+    margin-right: 1rem;
+  }
+
+  h2 {
+    margin-bottom: 4rem;
+  }
+
+  .contact-link {
+    color: #2d9cdb;
+    font-weight: bold;
+    display: block;
+    text-decoration: underline;
+    margin-bottom: 0.5rem;
+  }
+
+  .contact-details {
+    line-height: 3rem;
+  }
+
+  @media (min-width: 50em) {
+    .even-columns {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 3rem;
+
+      form {
+        margin-top: 0;
+      }
+
+      h2 {
+        font-size: 4.8rem;
+        margin-bottom: 3rem;
+      }
+
+      p {
+        font-size: 1.9rem;
+      }
+    }
+  }
+}
+
+.bottom-border {
+  height: 2px;
+  width: 350px;
+  background-color: #2d9cdb;
+  margin: 4rem 0;
+}
+
+form {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+
+  input,
+  textarea {
+    margin-bottom: 2rem;
+    width: 100%;
+    background-color: #f6f6f6;
+    border: none;
+    padding: 0.5em 0;
+  }
+
+  textarea {
+    resize: vertical;
+    height: 150px;
+  }
+}
+
+.name {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.first-name {
+  flex: 1;
+}
+
+.second-name {
+  flex: 1;
+}
+
+.submit-btn {
+  width: 100px;
+  background-color: #fff;
+  border: 2px solid #2d9cdb;
+  outline: none;
+  color: #2d9cdb;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 0.75em;
+}
+
 // Footer
 footer {
   background-color: #2d9cdb;
   color: #fff;
   padding: 3rem 0;
+
+  .contact-link {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
 
   .even-columns {
     display: flex;
@@ -514,6 +624,6 @@ footer {
 }
 
 .email-link {
-  display: block;
-  margin-bottom: 1rem;
+  text-decoration: underline;
+  font-weight: bold;
 }
